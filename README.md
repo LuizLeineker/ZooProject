@@ -12,7 +12,7 @@ Para visualização e execução do projeto instale em sua máquina a seguinte f
 - [SQL Server](https://learn.microsoft.com/pt-br/sql/tools/configuration-manager/sql-server-configuration-manager?view=sql-server-ver17)
 
 ## 🖥️ Frontend
-### Inicie o CMD/PowerShell na pasta 'zoo-web', localizada na pasta do frontend.
+### Inicie o CMD/PowerShell na pasta `zoo-web`, localizada na pasta do frontend.
 
 ### Instale as dependências:
 ```bash
@@ -23,7 +23,7 @@ npm i
 npm run dev
 ```
 
-## 🖥 Backend
+## ⚙️ Backend
 Na pasta ZooProject, execute no terminal:
 ```bash
 dotnet add package Microsoft.EntityFrameworkCore
@@ -31,7 +31,7 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package Microsoft.EntityFrameworkCore.Design
 ```
 ### Connection String
-No arquivo appsettings.json, arrume a string de acordo com o banco.
+No arquivo `appsettings.json`, arrume a string de acordo com o banco.
 
 ### Banco de dados
 Na pasta da api, crie as migrations:
@@ -52,6 +52,6 @@ dotnet RUN
 - O projeto, a princípio, não aborda relações entre tabelas, como a relação entre animal e cuidados.
 
 ## Dificuldades
-Enfrentei alguns desafios durante o desenvolvimento.       
-Fazia um tempo que eu não trabalhava com React, e a nova versão também contribuiu para um atraso na finalização do projeto.    
-Outro detalhe foi o banco SQL Server, com o qual eu não tinha experiência.    
+- Enfrentei alguns desafios durante o desenvolvimento.       
+- Fazia um tempo que eu não trabalhava com React, e a nova versão também contribuiu para um atraso na finalização do projeto.    
+- Outro detalhe foi o banco SQL Server, com o qual eu não tinha experiência.    

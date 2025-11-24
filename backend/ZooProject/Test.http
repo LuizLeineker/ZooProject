@@ -1,0 +1,71 @@
+@baseUrl = http://localhost:5028
+
+### base
+GET http://localhost:5028
+
+### lista animals
+GET {{baseUrl}}/animals
+
+### lista animals
+GET {{baseUrl}}/animal/1
+
+### Cadastro Animal - Id é auto-increment
+POST {{baseUrl}}/animal/create
+Content-Type: application/json
+
+{
+    "name": "Cachorro Caramelo",
+    "description": "Um grande e feroz canídeo, profissional em pegar motos!",
+    "birth": "2024-05-10T00:00:00",
+    "species": "Canis lupus",
+    "habitat": "Ruas",
+    "countryOrigin": "Brasil"
+}
+
+### Update cadastro animal
+PUT {{baseUrl}}/animal/update/2
+Content-Type: application/json
+
+{
+   "name": "Pitbull",
+    "description": "Um grande e feroz canídeo!",
+    "birth": "2023-07-11",
+    "species": "Canis lupus",
+    "habitat": "Sua casa",
+    "countryOrigin": "Inglaterra"
+}
+
+### Remover cadastro animal
+DELETE {{baseUrl}}/animal/delete/5
+
+
+### Cuidados com o animal
+
+GET {{baseUrl}}/cuidados
+
+### cuidado ID
+GET {{baseUrl}}/cuidado/1
+
+### Cadastro 
+POST {{baseUrl}}/cuidado/create
+Content-Type: application/json
+
+{
+    "name": "Exame Veterinário",
+    "description": "Exame ....",
+    "frequency": "Mensal"
+}
+
+### Update cadastro animal
+PUT {{baseUrl}}/cuidado/update/5
+Content-Type: application/json
+
+{
+    "name": "Treinamento",
+    "description": "Treinamento para cuidar da casa....",
+    "frequency": "Diária"
+}
+
+
+### Remover cadastro animal
+DELETE {{baseUrl}}/cuidado/delete/5

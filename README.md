@@ -50,8 +50,3 @@ dotnet RUN
 ## 👀 Observações
 - Depois de configurar e rodar o projeto, mantenha ambos os terminais (frontend e backend) abertos simultaneamente para que o sistema funcione corretamente.   
 - O projeto, a princípio, não aborda relações entre tabelas, como a relação entre animal e cuidados.
-
-## Dificuldades
-- Enfrentei alguns desafios durante o desenvolvimento.       
-- Fazia um tempo que eu não trabalhava com React, e a nova versão também contribuiu para um atraso na finalização do projeto.    
-- Outro detalhe foi o banco SQL Server, com o qual eu não tinha experiência.    
